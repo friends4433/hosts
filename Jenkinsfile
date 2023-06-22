@@ -2,19 +2,18 @@ pipeline {
     agent any
     stages {
 
-        stage('Clone Repo') {
+        /* stage('Clone Repo') {
           steps {
             sh 'rm -rf packer-terraform-jenkins-docker'
             sh 'git clone git@github.com:mavrick202/packer-terraform-jenkins-docker.git'
             }
-        }
+        }*/
 		
 		stage('Packer Build AMI') {
           steps {
             
             sh 'pwd'
             sh 'ls -al'
-            sh 'cp /var/lib/jenkins/workspace/pipeline2/packer-terraform-jenkins-docker/*.* .'
             sh 'ls -al'
             sh 'packer build packer.json'
             }
