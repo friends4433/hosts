@@ -3,6 +3,16 @@ provider "aws" {
     secret_key = "yVEaykxGzE+HEIb0NPFRxH6Df8z+5HVRQYmNYOom"
     region = "us-east-1"
 }
+terraform {
+  backend "s3" {
+    bucket = "gvfxbucket02"
+    key    = "Pipeline.tfstate"
+    dynamodb_table = "terraform-lock"
+    region = "us-east-1"
+
+  }
+}
+
 
 data "aws_ami" "my_ami" {
      most_recent      = true
