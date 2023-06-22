@@ -1,6 +1,6 @@
 provider "aws" {
-    access_key = "AKIA2QEFLENWCZ57K3KB"
-    secret_key = "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"
+    access_key = "AKIATF3V2G6GXPTW3RHQ"
+    secret_key = "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"
     region = "us-east-1"
 }
 terraform {
@@ -26,7 +26,7 @@ resource "aws_instance" "web-1" {
     #ami = "ami-0d857ff0f5fc4e03b"
     availability_zone = "us-east-1a"
     instance_type = "t2.micro"
-    key_name = "LaptopKey"
+    key_name = "Desktop-Kye"
     subnet_id = "subnet-01f9c2774277f4015"
 	private_ip = "10.1.1.111"
     vpc_security_group_ids = ["sg-09c2fc6ae1a93c80e"]
