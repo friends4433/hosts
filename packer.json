@@ -10,6 +10,8 @@
       "name": "{{user `us_east_1_name`}}",
       "type": "amazon-ebs",
       "region": "us-east-1",
+      "access_key": "AKIATF3V2G6G72IVSP45",
+      "secret_key": "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",
       "vpc_id": "",
       "subnet_id": "",
       "source_ami": "{{user `us_east_1_ami`}}",
