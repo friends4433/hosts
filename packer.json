@@ -1,6 +1,6 @@
 {
   "variables": {
-    "us_east_1_ami": "ami-0261755bbcb8c4a84",
+    "us_east_1_ami": "ami-053b0d53c279acc90",
     "name": "aws-docker-ce-base",
     "us_east_1_name": "ubuntu-xenial-docker-ce-base",
     "ssh_username": "ubuntu"
