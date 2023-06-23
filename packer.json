@@ -11,8 +11,6 @@
     {
       "name": "{{user `us_east_1_name`}}",
       "type": "amazon-ebs",
-      // "access_key": "AKIA2QEFLENWCZ57K3KB",
-      // "secret_key": "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",
       "region": "us-east-1",
       "vpc_id": "",
       "subnet_id": "",
